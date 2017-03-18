@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta lang="ru">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Site Properties -->
+  <title>Challengy</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.8/semantic.min.css">
+  <link href="style.css" rel="stylesheet">
+
+  <script src="assets/library/jquery.min.js"></script>
+  <script src="../dist/components/visibility.js"></script>
+  <script src="../dist/components/sidebar.js"></script>
+  <script src="../dist/components/transition.js"></script>
+  <script>
+      $(document)
+          .ready(function() {
+              // fix menu when passed
+              $('.masthead')
+                  .visibility({
+                      once: false,
+                      onBottomPassed: function() {
+                          $('.fixed.menu').transition('fade in');
+                      },
+                      onBottomPassedReverse: function() {
+                          $('.fixed.menu').transition('fade out');
+                      }
+                  })
+              ;
+              // create sidebar and attach to menu open
+              $('.ui.sidebar')
+                  .sidebar('attach events', '.toc.item')
+              ;
+          })
+      ;
+  </script>
+</head>
+<body>
+
+<!-- Following Menu -->
+<div class="ui large top fixed hidden menu">
+  <div class="ui container">
+    <a class="active item">Home</a>
+    <a class="item">Work</a>
+    <a class="item">Company</a>
+    <a class="item">Careers</a>
+  </div>
+</div>
+
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar menu">
+  <a class="active item">Home</a>
+  <a class="item">Work</a>
+  <a class="item">Company</a>
+  <a class="item">Careers</a>
+</div>
+
+
+<!-- Page Contents -->
+<div class="pusher">
+  <div class="ui inverted vertical masthead center aligned segment">
+
+
+    <div class="ui inverted segment">
+      <div class="ui container">
+      <div class="ui inverted secondary pointing menu">
+        <div class="ui container">
+          <a class="active item" href="index.html">
+            О компании
+          </a>
+          <a class="item" href="jobs.html">
+            Работа
+          </a>
+        </div>
+        <div class="right menu">
+        <div class="ui item">
+            <i class="mail icon mailcolor"></i>
+            <div class="content">
+              <a class="maillink" href="mailto:contact@bittenred.com">contact@bittenred.com</a>
+            </div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+    <div class="ui text container">
+      <h1 class="ui red inverted header">
+        CHALLENGY
+      </h1>
+      <h2>Начни работать с нами</h2>
+      <a class="huge ui inverted purple button" href="#about">Узнать больше</a>
+    </div>
+
+  </div>
+
+
+  <div class="ui vertical stripe segment">
+    <div class="ui text container">
+      <h3 class="ui header"><a name="about"></a>О компании</h3>
+      <p>Перспективный стартап под названием Challengy, ориентированный на современную медиа
+        аудиторию (Youtube, Blogs, Twitch и т.д.). В основе стартапа лежит оригинальная идея
+        и реализация, таких проектов еще нету в сети. При успешной реализации проект
+        будет запущен на территории США. Изначальная оценка  проекта инвестором <strong>составила
+          100 000$</strong>. Теперь Мы находимся на следующей стадии инвестирования, поэтому...
+        </p>
+      <h4 class="ui red horizontal header divider">
+        &nbsp;
+      </h4>
+      <h3 class="ui header">В нашу команду требуется</h3>
+      <p>Мы находимся на следующей стадии инвестирования, поэтому в нашу команду требуется опытный
+        графический и веб дизайнеры.
+        Найти людей не сложно, сложно найти тех кто действительно в этом хорош,
+        а еще труднее найти того кому можно доверять.
+        Я близко знаком с ребятами которые работают в стартапах  и поэтому
+        понимаю, что не СЕО и не инвесторы дают проектам жизнь, это делают разработчики,
+        менеджеры все те люди которые каждый день работают не покладая рук.
+        Если вас интересует наш проект, будем рады с вами сотрудничать.
+      </p>
+      <a class="ui red huge button" href="jobs.html">Сотрудничить</a>
+    </div>
+  </div>
+
+
+  <div class="ui inverted vertical footer segment">
+
+  </div>
+
+</body>
+
+</html>
