@@ -12,35 +12,17 @@
     <title>Challengy</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.8/semantic.min.css">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
-    <script src="assets/library/jquery.min.js"></script>
-    <script src="../dist/components/visibility.js"></script>
-    <script src="../dist/components/sidebar.js"></script>
-    <script src="../dist/components/transition.js"></script>
-    <script>
-        $(document)
-            .ready(function() {
-                // fix menu when passed
-                $('.masthead')
-                    .visibility({
-                        once: false,
-                        onBottomPassed: function() {
-                            $('.fixed.menu').transition('fade in');
-                        },
-                        onBottomPassedReverse: function() {
-                            $('.fixed.menu').transition('fade out');
-                        }
-                    })
-                ;
-                // create sidebar and attach to menu open
-                $('.ui.sidebar')
-                    .sidebar('attach events', '.toc.item')
-                ;
-            })
-        ;
-    </script>
+
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="js/semantic.min.js"></script>
 </head>
+
 <body>
 
 <!-- Page Contents -->
@@ -61,9 +43,8 @@
             </div>
             <div class="right menu">
                 <div class="ui item">
-                    <i class="mail icon mailcolor"></i>
                     <div class="content">
-                        <a class="maillink" href="mailto:contact@bittenred.com">contact@bittenred.com</a>
+                        <a class="maillink" href="mailto:contact@bittenred.com"><i class="mail icon"></i>contact@bittenred.com</a>
                     </div>
                 </div>
             </div>
@@ -101,16 +82,13 @@
 
                 </div>
             </div>
-
-        </div>
-        <div class="ui container">
-            <div class="ui piled segment">
+            <div class="ui basic segment">
                 <p>Напишите нам, что-бы узнать подробности
-                    <i class="mail icon mailcolor"></i>
-                    <a class="maillink2" href="mailto:contact@bittenred.com">contact@bittenred.com</a>
+                    <a class="maillink2" href="mailto:contact@bittenred.com"> <i class="mail icon"></i>contact@bittenred.com</a>
                 </p>
             </div>
         </div>
+
 
     </div>
 

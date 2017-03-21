@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,34 +11,15 @@
     <title>Challengy</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.8/semantic.min.css">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
-    <script src="assets/library/jquery.min.js"></script>
-    <script src="../dist/components/visibility.js"></script>
-    <script src="../dist/components/sidebar.js"></script>
-    <script src="../dist/components/transition.js"></script>
-    <script>
-        $(document)
-            .ready(function() {
-                // fix menu when passed
-                $('.masthead')
-                    .visibility({
-                        once: false,
-                        onBottomPassed: function() {
-                            $('.fixed.menu').transition('fade in');
-                        },
-                        onBottomPassedReverse: function() {
-                            $('.fixed.menu').transition('fade out');
-                        }
-                    })
-                ;
-                // create sidebar and attach to menu open
-                $('.ui.sidebar')
-                    .sidebar('attach events', '.toc.item')
-                ;
-            })
-        ;
-    </script>
+
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="js/semantic.min.js"></script>
 </head>
 <body>
 
@@ -48,34 +28,30 @@
     <div class="ui container">
         <div class="ui inverted secondary pointing menu">
             <div class="ui container">
-                <a class="item" href="index.html">
-                    О компании
-                </a>
-                <a class="active item" href="jobs.html">
-                    Работа
-                </a>
+                <a class="item" href="index.html">О компании</a>
+                <a class="active item" href="jobs.html">Работа</a>
             </div>
             <div class="right menu">
                 <div class="ui item">
-                    <i class="mail icon mailcolor"></i>
                     <div class="content">
-                        <a class="maillink" href="mailto:contact@bittenred.com">contact@bittenred.com</a>
+                        <a class="maillink" href="mailto:contact@bittenred.com"><i class="mail icon"></i>contact@bittenred.com</a>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-
 </div>
 
+<br>
+<br>
 <div class="ui container">
-    <div class="ui vertical stripe quote segment">
-        <div class="ui equal width stackable internally celled grid">
-            <div class="center aligned row">
-                <div class="column">
-                    <h1 class="ui header">Веб дизайнер</h1>
-                    <p><strong>Идеальный кандидат:</strong><br>
+    <div class="ui stackable two column divided grid container">
+        <div class="column">
+            <div class="ui basic segment">
+                <h1 class="ui dividing header red">
+                    Веб дизайнер
+                </h1>
+                <div class="ui basic segment">
                     <ul class="ui list">
                         <li>Навыки и опыт работы в веб дизайне</li>
                         <li>Жаждет создавать масштабные проекты, доступные огромной аудитории</li>
@@ -85,12 +61,22 @@
                         <li> Креативный подход, современный дизайн, высокий уровень профессионализма</li>
                         <li>Умение правильно доносить свои мысли в письменной и устной формах</li>
                     </ul>
-                    </p>
-                    <p><a class="ui red large button" href="design.html">Узнать больше</a></p>
                 </div>
-                <div class="column">
-                    <h3>Графический дизайнер</h3>
-                    <p><strong>Идеальный кандидат:</strong><br>
+            </div>
+            <div class="ui basic segment">
+                <div class="ui teal message">
+                    <div class="header">
+                        <a href="design.html">Техническое задание для веб дизайна</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="ui basic segment">
+                <h1 class="ui dividing header red">
+                    Графический дизайнер
+                </h1>
+                <div class="ui basic segment">
                     <ul class="ui list">
                         <li>Хорошее орентирование в современных тенденциях дизайна</li>
                         <li>Креативный подход, современный дизайн, высокий уровень профессионализма</li>
@@ -98,18 +84,21 @@
                         <li>Большой опыт создания логотипов</li>
                         <li>Наличие достойного портфолио по логотипам</li>
                     </ul>
-                    </p>
-                    <p>
-                        <a class="ui red large button" href="logo.html">Узнать больше</a>
-                    </p>
+                </div>
+                <div class="ui basic segment">
+                    <div class="ui teal message">
+                        <div class="header">
+                            <a href="logo.html">Техническое задание на логотип</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 </div>
 
-
-<div class="ui inverted vertical footer segment">
+<div class="ui inverted vertical footer segment ">
 
 </div>
 

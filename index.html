@@ -12,56 +12,18 @@
   <title>Challengy</title>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.8/semantic.min.css">
-  <link href="style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
-  <script src="assets/library/jquery.min.js"></script>
-  <script src="../dist/components/visibility.js"></script>
-  <script src="../dist/components/sidebar.js"></script>
-  <script src="../dist/components/transition.js"></script>
-  <script>
-      $(document)
-          .ready(function() {
-              // fix menu when passed
-              $('.masthead')
-                  .visibility({
-                      once: false,
-                      onBottomPassed: function() {
-                          $('.fixed.menu').transition('fade in');
-                      },
-                      onBottomPassedReverse: function() {
-                          $('.fixed.menu').transition('fade out');
-                      }
-                  })
-              ;
-              // create sidebar and attach to menu open
-              $('.ui.sidebar')
-                  .sidebar('attach events', '.toc.item')
-              ;
-          })
-      ;
-  </script>
+
+  <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+  <script
+          src="https://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous"></script>
+  <script src="js/semantic.min.js"></script>
+</head>
 </head>
 <body>
-
-<!-- Following Menu -->
-<div class="ui large top fixed hidden menu">
-  <div class="ui container">
-    <a class="active item">Home</a>
-    <a class="item">Work</a>
-    <a class="item">Company</a>
-    <a class="item">Careers</a>
-  </div>
-</div>
-
-<!-- Sidebar Menu -->
-<div class="ui vertical inverted sidebar menu">
-  <a class="active item">Home</a>
-  <a class="item">Work</a>
-  <a class="item">Company</a>
-  <a class="item">Careers</a>
-</div>
-
-
 <!-- Page Contents -->
 <div class="pusher">
   <div class="ui inverted vertical masthead center aligned segment">
@@ -79,12 +41,11 @@
           </a>
         </div>
         <div class="right menu">
-        <div class="ui item">
-            <i class="mail icon mailcolor"></i>
-            <div class="content">
-              <a class="maillink" href="mailto:contact@bittenred.com">contact@bittenred.com</a>
-            </div>
-        </div>
+          <div class="ui item">
+              <div class="content">
+                <a class="maillink" href="mailto:contact@bittenred.com"><i class="mail icon"></i>contact@bittenred.com</a>
+              </div>
+          </div>
         </div>
       </div>
       </div>
@@ -127,12 +88,14 @@
       <a class="ui red huge button" href="jobs.html">Сотрудничить</a>
     </div>
   </div>
-
-
   <div class="ui inverted vertical footer segment">
 
   </div>
+</div>
 
+<div class="ui inverted vertical footer segment">
+
+</div>
 </body>
 
 </html>
