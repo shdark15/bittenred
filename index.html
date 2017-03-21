@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.8/semantic.min.css">
   <link href="css/style.css" rel="stylesheet">
 
-
   <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
   <script
           src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -36,10 +35,20 @@
 <body>
 <!-- Page Contents -->
 <div class="pusher">
-  <div class="ui inverted vertical masthead center aligned segment">
+  <div class="ui vertical masthead center aligned segment" style="position: relative;">
 
+    <div style="
+     background-image: url('images/07-photo.JPG');
+     contrast(80%) brightness(65%); position: absolute;
+     background-size: cover;
+     background-position: center center;
+     filter: contrast(85%) brightness(60%);
+     z-index: 0;
+     height: 100%;
+     width: 100%;"></div>
 
-    <div class="ui inverted segment">
+    <div class="ui inverted segment" style="border-radius: 0 !important;
+    opacity: 0.87;">
       <div class="ui container">
       <div class="ui inverted secondary pointing menu">
         <div class="ui container">
@@ -61,12 +70,16 @@
       </div>
     </div>
 
-
-    <div class="ui text container">
-      <h1 class="ui red inverted header">
+    <div class="ui text container"  style="z-index: 1; position: relative;">
+      <h1 class="ui red inverted header" id="title" style="    font-size: 8em;
+    margin-top: 0.8em;
+    text-shadow: 1px 1px RGBA(0,0,0,1);">
         CHALLENGY
       </h1>
-      <h2>Начни работать с нами</h2>
+      <h2 style="    color: #fff;
+    margin-bottom: 1.5em;
+    font-size: 3em;
+    text-shadow: 1px 1px RGBA(0,0,0,1);" id="sub-title">Начни работать с нами</h2>
       <a class="huge ui inverted purple button" href="#about">Узнать больше</a>
     </div>
 
